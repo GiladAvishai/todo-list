@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eeeeee;
+    background-image: url("https://transparenttextures.com/patterns/bedge-grunge.png");
+    padding: 0 16px;
+}
