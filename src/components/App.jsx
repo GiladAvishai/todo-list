@@ -2,8 +2,8 @@ import React from "react";
 import InputArea from "./InputArea";
 import TodoItem from "./TodoItem";
 import Header from "./Header";
+import Footer from "./Footer";
 
-// add todoItem component and add to app
 // add header and footer
 // add logic to todo-list
 // style the app
@@ -16,5 +16,6 @@ export default function App() {
         <ul>
             <TodoItem/>
         </ul>
+        <Footer/>
     </div>);
 }
