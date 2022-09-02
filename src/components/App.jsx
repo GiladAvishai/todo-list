@@ -1,6 +1,7 @@
 import React from "react";
 import InputArea from "./InputArea";
 import TodoItem from "./TodoItem";
+import Header from "./Header";
 
 // add todoItem component and add to app
 // add header and footer
@@ -10,6 +11,7 @@ import TodoItem from "./TodoItem";
 export default function App() {
     return (
     <div>
+        <Header/>
         <InputArea/>
         <ul>
             <TodoItem/>
