@@ -4,7 +4,6 @@ import TodoItem from "./TodoItem";
 import Header from "./Header";
 import Footer from "./Footer";
 
-// add header and footer
 // add logic to todo-list
 // style the app
 
