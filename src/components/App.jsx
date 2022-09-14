@@ -14,15 +14,16 @@ export default function App() {
     setItemsList((prevValue) => {
       return [...prevValue, item];
     });
-    console.log(itemsList);
   }
 
   return (
     <div>
       <Header />
-      <InputArea onAdd={addItem}/>
+      <InputArea onAdd={addItem} />
       <ul>
-        <TodoItem />
+        {itemsList.map((todoItem, index) => {
+          return <TodoItem key={index} id={index} itemName={todoItem} />;
+        })}
       </ul>
       <Footer />
     </div>
