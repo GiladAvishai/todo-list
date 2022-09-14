@@ -1,22 +1,26 @@
 import React, { useState } from "react";
-import AddIcon from '@mui/icons-material/Add';
-import Fab from '@mui/material/Fab';
+import AddIcon from "@mui/icons-material/Add";
+import Fab from "@mui/material/Fab";
 
+export default function InputArea(props) {
+  const [inputText, setInputText] = useState("");
 
-export default function InputArea() {
-    const [inputText, setInputText] = useState("");
+  function handleChange(event) {
+    const newValue = event.target.value;
+    setInputText(newValue);
+  }
 
-    function handleChange(event) {
-        const newValue = event.target.value;
-        setInputText(newValue);
-    }
-
-    return (
-        <div>
-            <form>
-                <input onChange={handleChange} />
-                <Fab><AddIcon/></Fab>
-            </form>
-        </div>
-    );
+  return (
+    <div>
+      <input onChange={handleChange} />
+      <Fab
+        onClick={() => {
+          props.onAdd(inputText);
+          setInputText("");
+        }}
+      >
+        <AddIcon />
+      </Fab>
+    </div>
+  );
 }

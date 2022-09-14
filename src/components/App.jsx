@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import InputArea from "./InputArea";
 import TodoItem from "./TodoItem";
 import Header from "./Header";
@@ -8,13 +8,23 @@ import Footer from "./Footer";
 // style the app
 
 export default function App() {
-    return (
+  const [itemsList, setItemsList] = useState([]);
+
+  function addItem(item) {
+    setItemsList((prevValue) => {
+      return [...prevValue, item];
+    });
+    console.log(itemsList);
+  }
+
+  return (
     <div>
-        <Header/>
-        <InputArea/>
-        <ul>
-            <TodoItem/>
-        </ul>
-        <Footer/>
-    </div>);
+      <Header />
+      <InputArea onAdd={addItem}/>
+      <ul>
+        <TodoItem />
+      </ul>
+      <Footer />
+    </div>
+  );
 }
