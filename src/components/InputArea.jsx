@@ -12,7 +12,7 @@ export default function InputArea(props) {
 
   return (
     <div>
-      <input onChange={handleChange} />
+      <input value={inputText} onChange={handleChange} />
       <Fab
         onClick={() => {
           props.onAdd(inputText);
