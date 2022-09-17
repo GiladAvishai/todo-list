@@ -1,3 +1,8 @@
+/* font-family: 'Kanit', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Nunito', sans-serif; */
+
+
 * {
     padding: 0;
     margin: 0;
@@ -9,3 +14,16 @@ body {
     background-image: url("https://transparenttextures.com/patterns/bedge-grunge.png");
     padding: 0 16px;
 }
+
+header {
+    background-color: #AAC4FF;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-family: 'Kanit', sans-serif;
+    color: #EEF1FF;
+}
+
