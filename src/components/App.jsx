@@ -16,13 +16,28 @@ export default function App() {
     });
   }
 
+  function deleteItem(id) {
+    setItemsList((prevItems) => {
+      return prevItems.filter((item, index) => {
+        return index !== id;
+      });
+    });
+  }
+
   return (
     <div>
       <Header />
       <InputArea onAdd={addItem} />
       <ul>
         {itemsList.map((todoItem, index) => {
-          return <TodoItem key={index} id={index} itemName={todoItem} />;
+          return (
+            <TodoItem
+              key={index}
+              id={index}
+              onDelete={deleteItem}
+              itemName={todoItem}
+            />
+          );
         })}
       </ul>
       <Footer />
