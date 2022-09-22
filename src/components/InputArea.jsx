@@ -12,6 +12,7 @@ export default function InputArea(props) {
 
   return (
     <div>
+      <h1>My List</h1>
       <input value={inputText} onChange={handleChange} />
       <Fab
         onClick={() => {
