@@ -9,6 +9,10 @@ font-family: 'Nunito', sans-serif; */
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
 body {
     background-color: #eeeeee;
     background-image: url("https://transparenttextures.com/patterns/bedge-grunge.png");
