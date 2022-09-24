@@ -42,3 +42,7 @@ footer {
 footer p {
     color: #ccc;
 }
+
+#listheader {
+    font-family: 'Noto Sans KR', sans-serif;    
+}
