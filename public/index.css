@@ -46,3 +46,11 @@ footer p {
 #listheader {
     font-family: 'Noto Sans KR', sans-serif;    
 }
+
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 1rem;
+    /* box-sizing: border-box; */
+}
+

@@ -27,19 +27,21 @@ export default function App() {
   return (
     <div>
       <Header />
-      <InputArea onAdd={addItem} />
-      <ul>
-        {itemsList.map((todoItem, index) => {
-          return (
-            <TodoItem
-              key={index}
-              id={index}
-              onDelete={deleteItem}
-              itemName={todoItem}
-            />
-          );
-        })}
-      </ul>
+      <div className="container">
+        <InputArea onAdd={addItem} />
+        <ul>
+          {itemsList.map((todoItem, index) => {
+            return (
+              <TodoItem
+                key={index}
+                id={index}
+                onDelete={deleteItem}
+                itemName={todoItem}
+              />
+            );
+          })}
+        </ul>
+      </div>
       <Footer />
     </div>
   );
