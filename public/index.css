@@ -16,7 +16,6 @@ html {
 body {
     background-color: #eeeeee;
     background-image: url("https://transparenttextures.com/patterns/bedge-grunge.png");
-    padding: 0 16px;
 }
 
 header {
@@ -44,13 +43,22 @@ footer p {
 }
 
 #listheader {
-    font-family: 'Noto Sans KR', sans-serif;    
+    font-family: 'Inter Tight', sans-serif;
 }
 
 .container {
     width: 50%;
     margin: auto;
     padding: 1rem;
-    /* box-sizing: border-box; */
 }
 
+#inputarea {
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+#inputarea input {
+    margin: 1rem;
+}
