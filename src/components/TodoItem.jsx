@@ -6,15 +6,14 @@ export default function TodoItem(props) {
     props.onDelete(props.id);
   }
   return (
-    <div>
+    <div className="form">
       <li>
+        <button onClick={handleClick}>
+          <DeleteOutlineIcon></DeleteOutlineIcon>
+        </button>
         {props.itemName}
-        <div>
-          <button onClick={handleClick}>
-            <DeleteOutlineIcon></DeleteOutlineIcon>
-          </button>
-        </div>
       </li>
+      <hr/>
     </div>
   );
 }
