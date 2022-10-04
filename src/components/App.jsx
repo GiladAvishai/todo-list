@@ -4,9 +4,6 @@ import TodoItem from "./TodoItem";
 import Header from "./Header";
 import Footer from "./Footer";
 
-// add logic to todo-list
-// style the app
-
 export default function App() {
   const [itemsList, setItemsList] = useState([]);
 
