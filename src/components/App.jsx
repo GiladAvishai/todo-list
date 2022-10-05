@@ -8,9 +8,13 @@ export default function App() {
   const [itemsList, setItemsList] = useState([]);
 
   function addItem(item) {
-    setItemsList((prevValue) => {
-      return [...prevValue, item];
-    });
+    if (item === "") {
+      alert("please enter text");
+    } else {
+      setItemsList((prevValue) => {
+        return [...prevValue, item];
+      });
+    }
   }
 
   function deleteItem(id) {
